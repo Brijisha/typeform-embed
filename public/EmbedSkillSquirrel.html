@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Embedded SkillSquirrel Webpage</title>
+  </head>
+  <body>
+    <!-- Add a container where the webpage will be displayed -->
+    <div id="skillsquirrel-container"></div>
+
+    <!-- Add the copy button -->
+    <button id="copy-button">Copy Embed Code</button>
+
+    <!-- Add the embed code -->
+    <script>
+      // Define the embed code
+      var embedCode =
+        '<iframe src="https://www.skillsquirrel.com" style="width: 100%; height: 100%; border: none;"></iframe>';
+
+      // Get the container element
+      var container = document.getElementById("skillsquirrel-container");
+
+      // Set the embed code as the HTML content of the container
+      container.innerHTML = embedCode;
+
+      // Get the copy button element
+      var copyButton = document.getElementById("copy-button");
+
+      // Add a click event listener to the button
+      copyButton.addEventListener("click", function () {
+        // Create a new textarea element
+        var textarea = document.createElement("textarea");
+
+        // Set the value of the textarea to the embed code
+        textarea.value = embedCode;
+
+        // Append the textarea to the body
+        document.body.appendChild(textarea);
+
+        // Select the content of the textarea
+        textarea.select();
+
+        // Copy the selected text to the clipboard
+        document.execCommand("copy");
+
+        // Remove the textarea from the body
+        document.body.removeChild(textarea);
+
+        // Alert the user that the code has been copied
+        alert("Embed code has been copied to the clipboard!");
+      });
+    </script>
+  </body>
+</html>

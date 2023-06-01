@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form with Tailwind CSS and Typeform</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mx-auto py-10">
+      <h1 class="text-2xl font-bold mb-5">
+        Embeded Typeform Form In HTML With Tailwind CSS
+      </h1>
+
+      <!-- Typeform form here -->
+      <!--Embeded code is: <div data-tf-widget="FaksmCBS" data-tf-opacity="100" data-tf-iframe-props="title=Test-Brijisha" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:500px;"></div><script src="//embed.typeform.com/next/embed.js"></script> -->
+      <div
+        data-tf-widget="FaksmCBS"
+        data-tf-opacity="100"
+        data-tf-iframe-props="title=Test-Brijisha"
+        data-tf-transitive-search-params
+        data-tf-medium="snippet"
+        style="width: 100%; height: 500px"
+      ></div>
+    </div>
+
+    <script src="//embed.typeform.com/next/embed.js"></script>
+  </body>
+</html>
+
+<!-- <div> element:
+The <div> element is an HTML container used to define a section or a division within an HTML document. In this case, it is used to contain the Typeform widget.
+
+data-tf-widget="FaksmCBS": This attribute specifies the ID or key of the Typeform you want to embed. Replace "FaksmCBS" with the actual ID or key of your Typeform.
+data-tf-opacity="100": This attribute sets the opacity level of the widget. In this case, it is set to 100, indicating full opacity.
+data-tf-iframe-props="title=Test-Brijisha": This attribute allows you to customize the properties of the embedded Typeform. Here, it sets the title of the iframe to "Test-Brijisha". You can modify the title according to your needs.
+data-tf-transitive-search-params: This attribute enables the widget to inherit the search parameters from the URL of the webpage where it is embedded. This can be useful for capturing context or search query data from the URL.
+data-tf-medium="snippet": This attribute specifies the medium of the widget. In this case, it is set to "snippet".
+The style="width:100%;height:500px;" attribute sets the width and height of the widget to 100% and 500 pixels, respectively. You can adjust these values based on your requirements.
+
+<script> element:
+The <script> element is used to embed or reference external JavaScript files within an HTML document.
+
+The src attribute specifies the source or URL of the JavaScript file to be included. In this case, the URL is "//embed.typeform.com/next/embed.js". This script file is provided by Typeform and is responsible for loading and displaying the embedded Typeform widget on the webpage.
+
+By combining these two elements, you embed the Typeform widget in your webpage, customize its properties, and load the necessary JavaScript file for the widget to function properly.
+     
+
+
+
+
+
+-->
